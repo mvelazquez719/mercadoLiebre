@@ -1,0 +1,46 @@
+body {
+    background: #ffd500;
+    font-family:'Roboto', sans-serif;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripcion {
+    font-size: 16px;
+}
+
+.fas fa-bars {
+    color: #03264C;
+    size: 60px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+}
+
+.list {
+    text-align:left;
+    display:inline-block;
+}
+
+body {
+    text-align: center;
+}
+
+.url {
+    font-size: 16px;
+}
+
+.copy {
+    font-size: 12px;  
+}

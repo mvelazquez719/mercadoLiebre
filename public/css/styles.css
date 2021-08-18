@@ -6,13 +6,18 @@ body {
     
     font-family:'Roboto', sans-serif;
     background-color: rgba(241, 237, 237, 0.74);
+    text-align: center;
 }
 .main-header {
     background: #ffd500;
     padding: 20px;
 }
+.main-header-top-bar {
+    display: flex;
+    flex-direction: column;
+}
 .logo {
-    width: 200px;
+    width: 170px;
 }
 .banner {
     width: 100%;
@@ -33,13 +38,15 @@ body {
 }
 
 .copy-header {
-    font-weight: 400;
+    font-weight: 150;
     text-align: center;
+    font-size: 100%;
 }
 
 .list {
     text-align: left;
     display: none;
+
 }
 
 .list ul {
@@ -54,6 +61,8 @@ body {
    display: inline-block;
    padding: 5px 0;
 }
+
+
 .productos {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +96,19 @@ body {
 .juntos li {
     padding: 0 10px 0 0;
 }
+.truck-icon {
+    color: #39b54a;
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+}
 .precio {
     font-size: 20px;
 }
@@ -102,18 +124,17 @@ body {
    }
 
 .buscador {
+    width: 230px ;
+    height: 30px;
     background-color: white;
-    border: solid 3px white;
-    border-radius: 5px;
+    border: solid 5px white;
+    border-radius: 10px;
+    margin: auto;
 }
 main {
     justify-content: space-around;
 }   
 
-.fas fa-bars {
-    color: #03264C;
-    size: 60px;
-}
 
 h1 {
     font-size: 24px;
@@ -122,30 +143,25 @@ h1 {
 
 footer {
     text-align: center;
-}
-
-
-body {
-    text-align: center;
-}
-
-.url {
-    font-size: 16px;
+    color:rgb(109, 103, 103);
 }
 
 .copy {
-    font-size: 12px;  
+    font-size: 12px; 
+    color:rgb(162, 154, 154); 
 }
 @media (min-width: 768px){
+    .logo {
+        width: 230px;
+    }
     .main-header-top-bar{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        flex-direction: row;
     }
     .copy-header{
-        max-width: 350px;
-        text-align: right;
-        
+        max-width: 250px;
+        text-align: right;        
     } 
     .hamburguer-button {
         display:none;
@@ -162,12 +178,11 @@ body {
     }
 }
 @media (min-width: 1200px) {
-    .logo {
-        width: 300px;
-    }
+    
     .main-header-top-bar, .list{
          max-width: 1200px;
          margin: auto;
+         flex-direction: row;
     }
     .main-header-top-bar{
         align-items: center;

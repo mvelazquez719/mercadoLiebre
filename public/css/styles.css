@@ -100,6 +100,12 @@ body {
     font-size: 18px;
     color: rgb(136, 132, 132);
    }
+
+.buscador {
+    background-color: white;
+    border: solid 3px white;
+    border-radius: 5px;
+}
 main {
     justify-content: space-around;
 }   

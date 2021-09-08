@@ -55,6 +55,10 @@ body {
     padding: 0px;
 }
 
+.list li a:hover {
+    color: #555454;
+}
+
 .list a {
    text-decoration: none;
    color: #222222;
@@ -77,6 +81,10 @@ body {
     text-align: justify;
     margin: 20px
 }
+.box-products:hover {
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.7));
+}
+
 .box-products ul {
     border-top: 1px solid #ebebeb;
 }
@@ -123,12 +131,22 @@ body {
    }
 
 .buscador {
-    width: 230px ;
-    height: 30px;
-    background-color: white;
-    border: solid 5px white;
-    border-radius: 10px;
-    margin: auto;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+.buscador .search-input {
+    padding: 10px;
+    width: 70%;
+}
+.search-icon.fas.fa-search{
+    position: relative;
+    right: 30px;
+}
+.fas.fa-search{
+    position: relative;
+}
+
 }
 main {
     justify-content: space-around;
@@ -139,11 +157,9 @@ h1 {
     font-size: 24px;
     margin-top: 20px;
 }
-.abajo{
-    display: flex;
-    justify-content: space-around;
-}
+
 .opciones {
+    font-size: 85%;
     text-align: center;
     color:rgb(109, 103, 103);
 }
@@ -152,6 +168,75 @@ h1 {
     font-size: 12px; 
     color:rgb(162, 154, 154); 
 }
+/*login*/
+
+.login {
+    background-color:rgb(225, 225, 225); 
+}
+.login div {
+    padding: 30px;
+}
+.login input {
+    padding: 10px 30px;
+}
+.button-enviar a{
+    color:rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    text-decoration: none;
+}
+
+
+/*register*/
+.formulario {
+    background-color:rgb(225, 225, 225); 
+}
+
+.datospersonales input{
+    padding: 10px 30px;
+    border: solid black 1px;
+}
+
+.datospersonales {
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    
+}
+.datospersonales input {
+    margin: 10px;
+}
+
+.labelform {
+   
+    font-size: 20px;
+    padding: 10px 30px;    
+}
+.exam input {
+    background-color: #ffffff;
+}
+.compravende {
+    background-color: #ffffff;
+    padding: 5px 30px;
+    border: solid black 1px;
+}
+.intereses {
+    display: flex;
+}
+
+.button-register a{
+    color:rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
 @media (min-width: 768px){
     .logo {
         width: 230px;
@@ -178,7 +263,11 @@ h1 {
     .list li {
         margin: 0 5px;
     }
-}
+    .abajo{
+        display: flex;
+        justify-content: space-around;
+    }
+ }
 @media (min-width: 1200px) {
     
     .main-header-top-bar, .list{
@@ -202,5 +291,8 @@ h1 {
         max-width: none;
         font-size: 22px;
     }    
+    .opciones {
+        font-size: 100%;
+    }
 
 } 

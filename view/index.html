@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mercado Liebre</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="./css/styles.css" rel="stylesheet">
 
@@ -22,10 +22,10 @@
             <img src="./img/logo-mercado-liebre.svg" class="logo">
 
             <div class="buscador">
-                <input type="search" name="busquedaproductos" placeholder="Buscar productos, marcas...">
-                <button> 
-                    <i class="fas fa-search"></i>
-                </button>
+                <form action="#" method="POST">
+                    <input class="search-input" type="text" placeholder="Buscar productos, marcas...">
+                    <i class="search-icon fas fa-search"></i>
+                </form>
             </div>
 
 
@@ -46,8 +46,8 @@
             </ul>
 
             <ul class="rigth-navbar">
-                <li><a href="#">Crea tu cuenta <i class="far fa-address-card"></i></a></li>
-                <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="./register">Crea tu cuenta <i class="far fa-address-card"></i></a></li>
+                <li><a href="./login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
 
             </ul>
@@ -69,7 +69,7 @@
             <article class="box-products">
                 <img width="320" class="imagen" src="./img/img-cafetera-moulinex.jpg">
                 <i class="fas fa-truck truck-icon"></i>
-                <ul>                    
+                <ul>
                     <div class="juntos">
                         <li class="precio">$6.770</li>
                         <li class="descuentos">40% off</li>
@@ -178,28 +178,28 @@
         </article>
     </main>
 
-    <footer class= "abajo">
-       <div class= "opciones">  
-        <i class="far fa-credit-card"style= "color: blue"></i>
-        <h3>Pagá con tarjeta o en efectivo</h3>
-        <p>Con Mercado Liebre Cash, tenés cuotas sin <br> interés con tarjeta o efectivo en
-            puntos de <br> pago. ¡Y siempre es seguro!</p>
-       </div>
-            <div class= "opciones"> 
-        <i class="fas fa-gift"style= "color: blue"></i>
-        <h3>Envío gratis desde $ 2.500</h3>
-        <p>Solo por estar registrad@ en Mercado Libre <br> tenés envíos gratis en miles de
-            productos. Es <br> un beneficio de Mercado Puntos.</p>
-            </div>
-            <div class= "opciones"> 
-        <i class="fas fa-user-shield"style= "color: blue"></i>
-        <h3>Seguridad, de principio a fin</h3>
-        <p>¿No te gusta? ¡Devolvelo! En Mercado Libre, <br> no hay nada que no puedas hacer,
-            porque estás <br> siempre protegid@.</p>
-            </div>
-        
+    <footer class="abajo">
+        <div class="opciones">
+            <i class="far fa-credit-card" style="color: blue"></i>
+            <h3>Pagá con tarjeta o en efectivo</h3>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin <br> interés con tarjeta o efectivo en
+                puntos de <br> pago. ¡Y siempre es seguro!</p>
+        </div>
+        <div class="opciones">
+            <i class="fas fa-gift" style="color: blue"></i>
+            <h3>Envío gratis desde $ 2.500</h3>
+            <p>Solo por estar registrad@ en Mercado Libre <br> tenés envíos gratis en miles de
+                productos. Es <br> un beneficio de Mercado Puntos.</p>
+        </div>
+        <div class="opciones">
+            <i class="fas fa-user-shield" style="color: blue"></i>
+            <h3>Seguridad, de principio a fin</h3>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Libre, <br> no hay nada que no puedas hacer,
+                porque estás <br> siempre protegid@.</p>
+        </div>
 
-       
+
+
     </footer>
     <p class="copy">Copyright ©️ 1999-2020 MercadoLiebre S.R.L.</p>
 </body>

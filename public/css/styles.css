@@ -85,6 +85,7 @@ body {
     filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.7));
 }
 
+
 .box-products ul {
     border-top: 1px solid #ebebeb;
 }
@@ -125,11 +126,14 @@ body {
     color: rgb(3, 197, 3);
     }
 
-.descripcion {
+.box-products .descripcion {
     font-size: 18px;
     color: rgb(136, 132, 132);
+    display: none;
    }
-
+.box-products:hover .descripcion{
+    display: block;
+}
 .buscador {
     padding: 20px;
     width: 50%;
